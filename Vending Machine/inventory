@@ -1,0 +1,32 @@
+package inventory;
+import item.Item;
+import item.ItemShelf;
+public class Inventory {
+    private ItemShelf[] inventory;
+
+    public Inventory(int n) {
+        inventory = new ItemShelf[n];
+        initialEmptyInventory();
+    }
+
+    public ItemShelf[] getInventory() {
+        return this.inventory;
+    }
+
+    public void setInventory(ItemShelf[] inventory) {
+        this.inventory = inventory;
+    }
+
+    public void initialEmptyInventory() {
+    }
+
+    public void addItem(Item item, int itemCode) { 
+    }
+
+    public void getItem(int itemCode) {
+
+    }
+
+    public void updateSoldOutItem(int itemCodeNumber) {
+    }
+}
